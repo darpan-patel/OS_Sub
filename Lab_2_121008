@@ -1,0 +1,259 @@
+total 44
+drwxr-xr-x 2 hemil hemil 4096 Jan 25 23:06 Desktop
+drwxr-xr-x 2 hemil hemil 4096 Jan 25 23:06 Documents
+drwxr-xr-x 2 hemil hemil 4096 Jan 25 23:06 Downloads
+-rw-r--r-- 1 hemil hemil 8980 Jan 25 22:29 examples.desktop
+drwxr-xr-x 2 hemil hemil 4096 Jan 25 23:06 Music
+drwxr-xr-x 2 hemil hemil 4096 Jan 25 23:06 Pictures
+drwxr-xr-x 2 hemil hemil 4096 Jan 25 23:06 Public
+drwxr-xr-x 2 hemil hemil 4096 Jan 25 23:06 Templates
+drwxr-xr-x 2 hemil hemil 4096 Jan 25 23:06 Videos
+Hello worldssa
+worldssa
+worldssa
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+spartan
+3.16.0-23-generic
+1c1,2
+< Hello worldssa
+---
+> What the hell is this
+> 
+0
+Filesystem     1K-blocks    Used Available Use% Mounted on
+/dev/sda15      33004344 3662200  27642560  12% /
+none                   4       0         4   0% /sys/fs/cgroup
+udev             2017076       4   2017072   1% /dev
+tmpfs             405456     952    404504   1% /run
+none                5120       4      5116   1% /run/lock
+none             2027280     328   2026952   1% /run/shm
+none              102400      80    102320   1% /run/user
+/dev/sdb1        7812864  201472   7611392   3% /media/hemil/9284-7919
+12	.
+12K	.
+/dev/pts/3
+[?1049h[?1h=[1;24r[?12;25h[?12l[?25h[27m[23m[m[H[2J[?25l[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[4;32HVIM - Vi IMproved[6;33Hversion 7.4.273[7;29Hby Bram Moolenaar et al.[8;13HModified by pkg-vim-maintainers@lists.alioth.debian.org[9;19HVim is open source and freely distributable[11;26HHelp poor children in Uganda![12;18Htype  :help iccf[34m<Enter>[m       for information [14;18Htype  :q[34m<Enter>[m               to exit         [15;18Htype  :help[34m<Enter>[m  or  [34m<F1>[m  for on-line help[16;18Htype  :help version7[34m<Enter>[m   for version info[18;26HRunning in Vi compatible mode[19;18Htype  :set nocp[34m<Enter>[m        for Vim defaults[20;18Htype  :help cp-default[34m<Enter>[m for info on this[1;1H[?12l[?25h[24;1H
+[?1l>[?1049lhemil    :0           2015-01-25 23:06 (:0)
+hemil    pts/3        2015-01-25 23:23 (:0)
+hemil    pts/7        2015-01-25 23:27 (:0)
+NAME     LINE         TIME             COMMENT
+hemil    :0           2015-01-25 23:06 (:0)
+hemil    pts/3        2015-01-25 23:23 (:0)
+hemil    pts/7        2015-01-25 23:27 (:0)
+[?1049h[1;24r(B[m[4l[?7h[?1h=[?1h=[H[2J[4dHello (B[0;7mworldssa[13d                                                                                [14;1H(B[m1) worlds[14;41H6) wields[15d2) world's[15;41H7) wilds's[16d3) wolds[16;41H8) welds[17d4) wold's[17;41H9) wilds[18d5) woulds[18;41H0) wordless[19di) Ignore[19;41HI) Ignore all[20dr) Replace[20;41HR) Replace all[21da) Add[21;41Hl) Add Lower[22db) Abort[22;41Hx) Exit[23d(B[0;7m                                                                                [24;1H(B[m? Sorry that is an invalid choice![24;33H[24;1H[?1049l[?1l>Usage:	iw [options] command
+Options:
+	--debug		enable netlink debugging
+	--version	show version (3.14)
+Commands:
+	help [command]
+	event [-t] [-r] [-f]
+	features 
+	commands
+	phy
+	list
+	phy <phyname> info
+	dev
+	dev <devname> info
+	dev <devname> del
+	dev <devname> interface add <name> type <type> [mesh_id <meshid>] [4addr on|off] [flags <flag>*]
+	phy <phyname> interface add <name> type <type> [mesh_id <meshid>] [4addr on|off] [flags <flag>*]
+	dev <devname> ibss join <SSID> <freq in MHz> [HT20|HT40+|HT40-|NOHT|5MHZ|10MHZ] [fixed-freq] [<fixed bssid>] [beacon-interval <TU>] [basic-rates <rate in Mbps,rate2,...>] [mcast-rate <rate in Mbps>] [key d:0:abcde]
+	dev <devname> ibss leave
+	dev <devname> station dump
+	dev <devname> station set <MAC address> mesh_power_mode <active|light|deep>
+	dev <devname> station set <MAC address> vlan <ifindex>
+	dev <devname> station set <MAC address> plink_action <open|block>
+	dev <devname> station del <MAC address>
+	dev <devname> station get <MAC address>
+	dev <devname> survey dump
+	dev <devname> mesh leave
+	dev <devname> mesh join <mesh ID> [mcast-rate <rate in Mbps>] [beacon-interval <time in TUs>] [dtim-period <value>] [vendor_sync on|off] [<param>=<value>]*
+	dev <devname> mpath dump
+	dev <devname> mpath set <destination MAC address> next_hop <next hop MAC address>
+	dev <devname> mpath new <destination MAC address> next_hop <next hop MAC address>
+	dev <devname> mpath del <MAC address>
+	dev <devname> mpath get <MAC address>
+	dev <devname> scan [-u] [freq <freq>*] [ies <hex as 00:11:..>] [meshid <meshid>] [lowpri,flush,ap-force] [ssid <ssid>*|passive]
+	dev <devname> scan trigger [freq <freq>*] [ies <hex as 00:11:..>] [meshid <meshid>] [lowpri,flush,ap-force] [ssid <ssid>*|passive]
+	dev <devname> scan dump [-u]
+	reg get
+	reg set <ISO/IEC 3166-1 alpha2>
+	dev <devname> auth <SSID> <bssid> <type:open|shared> <freq in MHz> [key 0:abcde d:1:6162636465]
+	dev <devname> connect [-w] <SSID> [<freq in MHz>] [<bssid>] [key 0:abcde d:1:6162636465]
+	dev <devname> disconnect
+	dev <devname> link
+	dev <devname> offchannel <freq> <duration>
+	dev <devname> cqm rssi <threshold|off> [<hysteresis>]
+	phy <phyname> wowlan show 
+	phy <phyname> wowlan disable 
+	phy <phyname> wowlan enable [any] [disconnect] [magic-packet] [gtk-rekey-failure] [eap-identity-request] [4way-handshake] [rfkill-release] [tcp <config-file>] [patterns [offset1+]<pattern1> ...]
+	phy <phyname> coalesce show 
+	phy <phyname> coalesce disable 
+	phy <phyname> coalesce enable <config-file>
+	dev <devname> roc start <freq> <time in ms>
+	wdev <idx> p2p stop 
+	wdev <idx> p2p start 
+	phy <phyname> set antenna <bitmap> | all | <tx bitmap> <rx bitmap>
+	dev <devname> set txpower <auto|fixed|limit> [<tx power in mBm>]
+	phy <phyname> set txpower <auto|fixed|limit> [<tx power in mBm>]
+	phy <phyname> set distance <distance>
+	phy <phyname> set coverage <coverage class>
+	phy <phyname> set netns <pid>
+	phy <phyname> set rts <rts threshold|off>
+	phy <phyname> set frag <fragmentation threshold|off>
+	dev <devname> set channel <channel> [HT20|HT40+|HT40-]
+	phy <phyname> set channel <channel> [HT20|HT40+|HT40-]
+	dev <devname> set freq <freq> [HT20|HT40+|HT40-]
+	dev <devname> set freq <control freq> [20|40|80|80+80|160] [<center freq 1>] [<center freq 2>]
+	phy <phyname> set freq <freq> [HT20|HT40+|HT40-]
+	phy <phyname> set name <new name>
+	dev <devname> set mcast_rate <rate in Mbps>
+	dev <devname> set peer <MAC address>
+	dev <devname> set noack_map <map>
+	dev <devname> set 4addr <on|off>
+	dev <devname> set type <type>
+	dev <devname> set meshid <meshid>
+	dev <devname> set monitor <flag>*
+	dev <devname> set mesh_param <param>=<value> [<param>=<value>]*
+	dev <devname> set power_save <on|off>
+	dev <devname> set bitrates [legacy-<2.4|5> <legacy rate in Mbps>*] [ht-mcs-<2.4|5> <MCS index>*] [vht-mcs-<2.4|5> <NSS:MCSx,MCSy... | NSS:MCSx-MCSy>*]
+	dev <devname> get mesh_param [<param>]
+	dev <devname> get power_save <param>
+
+Commands that use the netdev ('dev') can also be given the
+'wdev' instead to identify the device.
+
+You can omit the 'phy' or 'dev' if the identification is unique,
+e.g. "iw wlan0 info" or "iw phy0 info". (Don't when scripting.)
+
+Do NOT screenscrape this tool, we don't consider its output stable.
+
+enable .
+enable :
+enable [
+enable alias
+enable bg
+enable bind
+enable break
+enable builtin
+enable caller
+enable cd
+enable command
+enable compgen
+enable complete
+enable compopt
+enable continue
+enable declare
+enable dirs
+enable disown
+enable echo
+enable enable
+enable eval
+enable exec
+enable exit
+enable export
+enable false
+enable fc
+enable fg
+enable getopts
+enable hash
+enable help
+enable history
+enable jobs
+enable kill
+enable let
+enable local
+enable logout
+enable mapfile
+enable popd
+enable printf
+enable pushd
+enable pwd
+enable read
+enable readarray
+enable readonly
+enable return
+enable set
+enable shift
+enable shopt
+enable source
+enable suspend
+enable test
+enable times
+enable trap
+enable true
+enable type
+enable typeset
+enable ulimit
+enable umask
+enable unalias
+enable unset
+enable wait
+hemil    pts/7        :0               Sun Jan 25 23:27   still logged in   
+hemil    pts/3        :0               Sun Jan 25 23:23   still logged in   
+hemil    :0           :0               Sun Jan 25 23:06   still logged in   
+reboot   system boot  3.16.0-23-generi Sun Jan 25 22:41 - 23:37  (00:56)    
+
+wtmp begins Sun Jan 25 22:41:07 2015
+Hello worldssa
+eth0      Link encap:Ethernet  HWaddr 38:60:77:ab:7e:18  
+          inet addr:192.168.1.2  Bcast:192.168.1.255  Mask:255.255.255.0
+          inet6 addr: fe80::3a60:77ff:feab:7e18/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:18081 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:11094 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:23661773 (23.6 MB)  TX bytes:893108 (893.1 KB)
+          Interrupt:20 Memory:fe400000-fe420000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:789 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:789 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:66240 (66.2 KB)  TX bytes:66240 (66.2 KB)
+
+         system boot  2015-01-25 22:41
+Linux spartan 3.16.0-23-generic #31-Ubuntu SMP Tue Oct 21 18:00:35 UTC 2014 i686 i686 i686 GNU/Linux
+             total       used       free     shared    buffers     cached
+Mem:       4054560    1466408    2588152     258492     122532     897624
+-/+ buffers/cache:     446252    3608308
+Swap:      4099068          0    4099068
+    January 2015      
+Su Mo Tu We Th Fr Sa  
+             1  2  3  
+ 4  5  6  7  8  9 10  
+11 12 13 14 15 16 17  
+18 19 20 21 22 23 24  
+_2_5 26 27 28 29 30 31  
+                      
+[1]   Stopped                 cat  (wd: ~)
+[2]   Stopped                 bc
+[3]   Stopped                 bc >> /media/hemil/9284-7919/junk
+[4]   Stopped                 vi >> /media/hemil/9284-7919/junk
+[5]   Stopped                 aspell check 1 >> /media/hemil/9284-7919/junk
+[6]   Stopped                 rev
+[7]   Stopped                 rev >> /media/hemil/9284-7919/junk
+[8]-  Stopped                 sort
+[9]+  Stopped                 unexpand
+[?1049h[?1h=[?12;25h[?12l[?25h[27m[23m[m[H[2J[?25l[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?12l[?25h[24;1H[m[?1l>[?1049lVim: Caught deadly signal HUP
+Vim: Finished.
+[24;1H
