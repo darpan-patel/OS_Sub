@@ -1,0 +1,219 @@
+#1.Write a Shell script to accept a string as command line argument and reverse the same.
+
+len=`echo $1 | wc -c`
+len=`expr $len - 1`
+rev=""
+while test $len -gt 0
+do
+rev1=`echo $1 | cut -c$len`
+rev=$rev$rev1
+len=`expr $len - 1`
+done
+echo $rev
+
+
+
+
+
+
+
+
+
+
+
+
+#2.Write a shell script to check if the input string is a palindrome.
+
+echo "Enter string to check palindrome:"
+read str
+
+len=`echo $str | wc -c`
+len=`expr $len - 1`
+rev=""
+while test $len -gt 0
+do
+rev1=`echo $str | cut -c$len`
+rev=$rev$rev1
+len=`expr $len - 1`
+done
+
+if [ "$rev" == "$str" ]
+then
+echo "Sequence is palindrome"
+else
+echo "Sequence is not palindrome"
+fi
+
+
+
+#3.Write a shell script to accept a number and a word as command line arguments and print the word the given number of times on each line.
+cnt=0; 
+while test $cnt -lt $2
+do
+echo "$1"
+cnt=`expr $cnt + 1`
+done
+
+
+
+
+
+
+#4. Write a shell script to find the file or directory with the maximum size in the current directory.
+find . -maxdepth 0 -printf '%s %p\n'|sort -nr|head -v
+
+
+
+
+
+
+
+
+#5.Write a shell script to accept two filenames and check if both exist. If the second filename exists, then the contents of the first filename should be appended to it. If the second filename does not exist then create a newfile with the contents of the first file.
+
+echo "enter the first file:"
+read file1
+echo "enter the 2nd file:"
+read file2
+if [ -e $file1 ]
+then echo "file1 is there"
+else
+echo "file1 is not there"
+fi
+if [ -e $file2 ]
+then 
+	count=1
+	echo "file2 is there"
+else
+	echo "file2 is not there"
+fi
+if [ $count -eq 1 ]
+then cat $file1 >> $file2
+else cat $file1 > $file2
+fi
+
+#6. Write a shell script to accept a number in the command line and displays the sum up to that number. By default, the sum up to 50 should be displayed.
+
+if [ $1 -eq " "]
+echo "1225"
+else
+echo "($1 * ($1 + 1)) / 2" | bc
+fi
+
+
+#7. Write a shell script to accept an alphabet from the user and list all the files/directory starting with that alphabet in the current directory.
+echo Enter character
+read c
+for i in `ls`
+do
+ x=`echo $i|cut -c 1`
+if [ $x = $c ]
+then echo $i
+fi
+done		
+
+#8. Binary Semaphore for producer consumer
+
+#include<stdio.h>
+struct semaphore{
+	int value;
+	int queue[2]; 
+};
+int item=0;
+void enqueue(struct semaphore s,int pid){
+	if(s.queue[0]==0)
+	s.queue[0]=pid;
+	else if(s.queue[1]==0)
+	s.queue[1]=pid;
+	else
+	printf("Queue is full");
+	
+}
+void dequeue(struct semaphore s){
+	 if(s.queue[0]!=0){
+	s.queue[0]=s.queue[1];	
+	 s.queue[1]=0;
+}		
+}
+
+void semwait(struct semaphore s,int pid){
+	if(s.value==1)
+	s.value=0;
+	else
+	enqueue(s,pid);
+}
+
+void semsignal(struct semaphore s){
+	s.value=0;
+	dequeue(s);
+}
+
+void producer(struct semaphore s,int pid){
+	semwait(s,pid);
+	if(item==0){
+	item=1;
+	printf("\nItem:%d ",item);
+	}
+	else{
+	printf("Buffer is Full");
+	printf("\nItem:%d",item);
+	}
+	semsignal(s);	
+}
+
+void consumer1(struct semaphore s,int pid){
+	semwait(s,pid);
+	if(item==1){
+	item=0;
+	printf("\nItem:%d",item);
+	}
+	else{
+	printf("Buffer is empty");
+	printf("\nItem:%d",item);
+	}
+semsignal(s);	
+}
+
+void consumer2(struct semaphore s,int pid){
+	semwait(s,pid);
+	if(item==1){
+	item=0;
+	printf("\nItem:%d",item);
+	}	
+	else{
+	printf("Buffer is empty");
+	printf("\nItem:%d",item);
+	}
+	semsignal(s);	
+}
+
+int main(){
+struct semaphore s;
+s.value=1;
+s.queue[0]=0;
+s.queue[1]=0;
+int choice;
+while(1)
+{
+printf("\n\n\n###Enter your choice \n1.Producer\n2.Consumer1\n3.Consumer2\n");
+scanf("%d",&choice);
+switch (choice)
+{
+	case 1:
+	producer(s,1);
+	break;
+	case 2:
+	consumer1(s,2);
+	break;
+	case 3:
+	consumer2(s,3);
+	break;
+}
+}
+}
+
+
+
+
+
+
